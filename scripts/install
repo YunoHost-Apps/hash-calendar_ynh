@@ -9,6 +9,8 @@ ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
 
+cp --archive --recursive "../sources/extra_files/*" "$install_dir"
+
 pushd "$install_dir"
     # Remove Google Analytics tracking
     sed -i '/<script/{:Loop;N;/\n\s*<\/script>/!bLoop;/gtag/d}' index.html #remove <script> blocks containing 'gtag'
