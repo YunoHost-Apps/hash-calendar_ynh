@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+lightweight, client-only calendar web application. All data persists in the URL hash for instant sharing, No backend required. Optional AES-GCM password protection keeps shared links locked without a server.
