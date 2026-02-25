@@ -15,8 +15,8 @@ pushd "$install_dir"
     sed -i '/<script/{:Loop;N;/\n\s*<\/script>/!bLoop;/gtag/d}' index.html #remove <script> blocks containing 'gtag'
 
     # Replace CDN links with local files
-    ynh_replace --match="https://cdnjs.cloudflare.com/ajax/" --replace="./" --file="index.html"
-    ynh_replace --match="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" --replace="./local-webfonts.css" --file="index.html"
+    ynh_replace --match="https://cdnjs.cloudflare.com/ajax/" --replace="" --file="index.html"
+    ynh_replace --match="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" --replace="local-webfonts.css" --file="index.html"
     sed -i '/https:\/\/fonts\.g/d' index.html #match both fonts.googleapis.com and fonts.gstatic.com
 
     # Update privacy policy
