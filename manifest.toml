@@ -5,7 +5,7 @@ name = "hash-calendar"
 description.en = "Lightweight calendar app where the data lives in the URL hash"
 description.fr = "Application légère de calendrier où les données résident dans le hash d'URL"
 
-version = "2026.03.05~ynh1"
+version = "2026.05.17~ynh1"
 
 maintainers = ["oleole39"]
 
@@ -46,8 +46,8 @@ ram.runtime = "0M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/supunlakmal/hash-calendar/archive/78a416d409a1de322004c94d17387833ec610a69.tar.gz"
-        sha256 = "eb9f68e8a09c54a095bff41f79d8ec8627435e17ed93366a64aef9c416188ea8"
+        url = "https://github.com/supunlakmal/hash-calendar/archive/130b07143213f20b5d465727be56eb4ee4e9d908.tar.gz"
+        sha256 = "35d0b6ff27685e4c294b4112b2bacb12d0a0e578532955312fc32d546d43013f"
         extract = true
         in_subdir = true
         autoupdate.strategy = "latest_github_commit"
