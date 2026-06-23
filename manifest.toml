@@ -5,7 +5,7 @@ name = "hash-calendar"
 description.en = "Lightweight calendar app where the data lives in the URL hash"
 description.fr = "Application légère de calendrier où les données résident dans le hash d'URL"
 
-version = "2026.05.17~ynh1"
+version = "2026.05.17~ynh2"
 
 maintainers = ["oleole39"]
 
